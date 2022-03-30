@@ -16,6 +16,6 @@ spec:
     namespace: default
   project: default
   source:
-    repoURL: https://github.com/chrisj-platform9/arlon
+    repoURL: https://github.com/chrisj-platform9/arlon-examples
     path: bundles/guestbook
     targetRevision: HEAD
