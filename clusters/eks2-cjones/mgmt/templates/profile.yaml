@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eks2-cjones-profile-platform-apps
+  name: eks2-cjones-profile-base-infra-apps
   namespace: argocd
   finalizers:
   # This solves issue #17
@@ -17,11 +17,11 @@ spec:
   project: default
   source:
     repoURL: https://github.com/chrisj-platform9/arlon-examples
-    path: profiles/platform-apps/mgmt
+    path: profiles/base-infra-apps/mgmt
     targetRevision: HEAD
     helm:
       parameters:
       - name: clusterName
         value: eks2-cjones
       - name: profileAppName
-        value: eks2-cjones-profile-platform-apps
+        value: eks2-cjones-profile-base-infra-apps
