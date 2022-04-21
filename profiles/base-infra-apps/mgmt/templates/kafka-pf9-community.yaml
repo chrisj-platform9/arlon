@@ -16,6 +16,6 @@ spec:
     namespace: default
   project: default
   source:
-    repoURL: https://github.com/platform9-community/apps-arlon-demo.git
+    repoURL: https://github.com/Platform9-Community/arlon-demo-apps.git
     path: apps/kafka
     targetRevision: HEAD
